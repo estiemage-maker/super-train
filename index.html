@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audit Bleu | Précision Hydrique</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 600px;
+            border-top: 8px solid #0056b3;
+        }
+
+        /* L'ANIMATION DU TITRE */
+        h1 { 
+            margin-bottom: 0.5rem; 
+            letter-spacing: 4px;
+            font-size: 2.5rem;
+            background: linear-gradient(270deg, #002d5a, #0056b3, #00d4ff, #0056b3);
+            background-size: 600% 600%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fluidWater 8s ease infinite;
+        }
+
+        @keyframes fluidWater {
+            0%{background-position:0% 50%}
+            50%{background-position:100% 50%}
+            100%{background-position:0% 50%}
+        }
+
+        .subtitle { font-weight: bold; color: #555; margin-bottom: 2rem; text-transform: uppercase; font-size: 0.9rem; }
+        p { line-height: 1.6; color: #666; }
+        .services { text-align: left; margin: 2rem 0; background: #eef4fb; padding: 1.5rem; border-radius: 5px; list-style: none; }
+        .services li { margin-bottom: 0.5rem; color: #004085; position: relative; padding-left: 20px; }
+        .services li::before { content: '→'; position: absolute; left: 0; color: #00d4ff; }
+        
+        .contact-btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background-color: #0056b3;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        .contact-btn:hover { transform: scale(1.05); background-color: #003d7a; }
+        footer { margin-top: 2rem; font-size: 0.8rem; color: #999; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AUDIT BLEU</h1>
+        <div class="subtitle">Analyse de données & Efficacité Hydrique</div>
+        
+        <p>L'expertise technique pour transformer vos factures d'eau en preuves tangibles d'économie.</p>
+        
+        <ul class="services">
+            <li>Détection de fuites invisibles</li>
+            <li>Validation des seuils de redevances</li>
+            <li>Rapports de conformité (Données réelles)</li>
+        </ul>
+
+        <p style="font-style: italic; font-size: 0.8rem;">Site web complet en cours de développement.</p>
+        
+        <a href="mailto:info@audit-bleu.ca" class="contact-btn">Contacter l'Expert</a>
+
+        <footer>&copy; 2026 Audit Bleu - Québec</footer>
+    </div>
+</body>
+</html>
